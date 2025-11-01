@@ -1,0 +1,8 @@
+node_modules
+build-temp
+.next
+dev.db
+uploads
+
+.env
+.env.local

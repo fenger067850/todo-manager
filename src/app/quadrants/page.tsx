@@ -199,7 +199,7 @@ export default function QuadrantsView() {
           type="checkbox"
           checked={todo.isCompleted}
           onChange={() => handleToggleComplete(todo)}
-          className="mt-1 h-5 w-5 text-blue-600 focus:ring-blue-500 border-gray-300 rounded cursor-pointer"
+          className="mt-1 h-5 w-5 text-pink-600 focus:ring-pink-500 border-gray-300 rounded cursor-pointer"
         />
 
         <div className="flex-1 min-w-0">
@@ -321,9 +321,9 @@ export default function QuadrantsView() {
           </div>
         )}
 
-        <div className="mt-8 bg-blue-50 border border-blue-200 rounded-lg p-6">
-          <h3 className="text-lg font-semibold text-blue-900 mb-3">使用说明</h3>
-          <ul className="space-y-2 text-sm text-blue-800">
+        <div className="mt-8 bg-pink-50 border border-pink-200 rounded-lg p-6">
+          <h3 className="text-lg font-semibold text-pink-900 mb-3">使用说明</h3>
+          <ul className="space-y-2 text-sm text-pink-800">
             <li>• 拖拽任务卡片到不同象限来改变任务的分类</li>
             <li>• 勾选复选框标记任务完成状态</li>
             <li>• 点击任务可以查看详细信息</li>

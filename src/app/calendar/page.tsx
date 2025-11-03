@@ -253,7 +253,7 @@ export default function CalendarView() {
                               e.stopPropagation()
                               handleToggleComplete(todo)
                             }}
-                            className="mt-1 h-5 w-5 text-blue-600 focus:ring-blue-500 border-gray-300 rounded"
+                            className="mt-1 h-5 w-5 text-pink-600 focus:ring-pink-500 border-gray-300 rounded"
                           />
 
                           <div className="flex-1 min-w-0">

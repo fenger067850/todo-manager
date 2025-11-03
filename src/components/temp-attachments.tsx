@@ -25,7 +25,7 @@ export function TempAttachmentManager({
   // 根据文件类型获取图标
   const getFileIcon = (fileType: string) => {
     if (fileType.includes('word') || fileType.includes('document')) {
-      return <FileText className="w-4 h-4 text-blue-600" />
+      return <FileText className="w-4 h-4 text-pink-600" />
     } else if (fileType.includes('sheet') || fileType.includes('excel')) {
       return <FileSpreadsheet className="w-4 h-4 text-green-600" />
     } else if (fileType.includes('presentation') || fileType.includes('powerpoint')) {
@@ -196,7 +196,7 @@ export function TempAttachmentManager({
         >
           {isUploading ? (
             <>
-              <div className="w-4 h-4 border-2 border-blue-500 border-t-transparent rounded-full animate-spin" />
+              <div className="w-4 h-4 border-2 border-pink-500 border-t-transparent rounded-full animate-spin" />
               上传中...
             </>
           ) : (

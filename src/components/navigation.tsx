@@ -29,13 +29,13 @@ export function Navigation() {
   if (!user) return null
 
   return (
-    <nav className="bg-white shadow-sm border-b border-gray-200">
+    <nav className="bg-gradient-to-r from-pink-50 to-purple-50 shadow-sm border-b-2 border-pink-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex">
             <div className="flex-shrink-0 flex items-center">
-              <Link href="/dashboard" className="text-xl font-bold text-blue-600">
-                宇哥-待办管理
+              <Link href="/dashboard" className="text-xl font-bold text-pink-600">
+                凤歌-待办管理
               </Link>
             </div>
             <div className="hidden sm:ml-6 sm:flex sm:space-x-8">
@@ -49,8 +49,8 @@ export function Navigation() {
                     href={item.href}
                     className={`${
                       isActive
-                        ? 'border-blue-500 text-gray-900'
-                        : 'border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700'
+                        ? 'border-pink-500 text-pink-900'
+                        : 'border-transparent text-pink-600 hover:border-pink-300 hover:text-pink-800'
                     } inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium`}
                   >
                     <Icon className="w-4 h-4 mr-2" />
@@ -62,7 +62,7 @@ export function Navigation() {
           </div>
 
           <div className="flex items-center space-x-4">
-            <div className="flex items-center space-x-2 text-sm text-gray-700">
+            <div className="flex items-center space-x-2 text-sm text-pink-800">
               <User className="w-4 h-4" />
               <span>{user.name || user.username}</span>
             </div>
@@ -71,7 +71,7 @@ export function Navigation() {
               variant="ghost"
               size="sm"
               onClick={logout}
-              className="text-gray-500 hover:text-gray-700"
+              className="text-pink-600 hover:text-pink-800 hover:bg-pink-100"
             >
               <LogOut className="w-4 h-4" />
             </Button>
@@ -92,8 +92,8 @@ export function Navigation() {
                 href={item.href}
                 className={`${
                   isActive
-                    ? 'bg-blue-50 border-blue-500 text-blue-700'
-                    : 'border-transparent text-gray-600 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-800'
+                    ? 'bg-pink-100 border-pink-500 text-pink-900'
+                    : 'border-transparent text-pink-700 hover:bg-pink-50 hover:border-pink-300 hover:text-pink-900'
                 } block pl-3 pr-4 py-2 border-l-4 text-base font-medium`}
               >
                 <div className="flex items-center">

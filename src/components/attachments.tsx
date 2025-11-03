@@ -28,7 +28,7 @@ export function AttachmentManager({
   // 根据文件类型获取图标
   const getFileIcon = (fileType: string) => {
     if (fileType.includes('word') || fileType.includes('document')) {
-      return <FileText className="w-4 h-4 text-blue-600" />
+      return <FileText className="w-4 h-4 text-pink-600" />
     } else if (fileType.includes('sheet') || fileType.includes('excel')) {
       return <FileSpreadsheet className="w-4 h-4 text-green-600" />
     } else if (fileType.includes('presentation') || fileType.includes('powerpoint')) {
@@ -199,7 +199,7 @@ export function AttachmentManager({
         >
           {isUploading ? (
             <>
-              <div className="w-4 h-4 border-2 border-blue-500 border-t-transparent rounded-full animate-spin" />
+              <div className="w-4 h-4 border-2 border-pink-500 border-t-transparent rounded-full animate-spin" />
               上传中...
             </>
           ) : (
@@ -219,7 +219,7 @@ export function AttachmentManager({
       {isUploading && (
         <div className="w-full bg-gray-200 rounded-full h-2">
           <div
-            className="bg-blue-600 h-2 rounded-full transition-all duration-300"
+            className="bg-pink-600 h-2 rounded-full transition-all duration-300"
             style={{ width: `${uploadProgress}%` }}
           />
         </div>
@@ -251,7 +251,7 @@ export function AttachmentManager({
                       onClick={() => handleDownload(attachment)}
                       variant="ghost"
                       size="sm"
-                      className="h-8 w-8 p-0 text-gray-500 hover:text-blue-600 hover:bg-blue-50"
+                      className="h-8 w-8 p-0 text-gray-500 hover:text-pink-600 hover:bg-pink-50"
                       title="下载"
                     >
                       <Download className="w-4 h-4" />

@@ -126,7 +126,7 @@ export function Calendar({ todos, cachedTodos = [], onDateClick, onTodoClick, on
 
           <button
             onClick={() => setCurrentDate(new Date())}
-            className="px-3 py-1 text-sm bg-blue-100 text-blue-700 rounded-lg hover:bg-blue-200 transition-colors"
+            className="px-3 py-1 text-sm bg-pink-100 text-pink-700 rounded-lg hover:bg-pink-200 transition-colors"
           >
             今天
           </button>
@@ -162,15 +162,15 @@ export function Calendar({ todos, cachedTodos = [], onDateClick, onTodoClick, on
               className={cn(
                 'min-h-[160px] p-3 border rounded-lg cursor-pointer transition-all',
                 isCurrentMonth ? 'bg-white border-gray-200' : 'bg-gray-50 border-gray-100',
-                isToday && 'bg-blue-50 border-blue-300',
-                'hover:border-blue-400 hover:shadow-sm'
+                isToday && 'bg-pink-50 border-pink-300',
+                'hover:border-pink-400 hover:shadow-sm'
               )}
               onClick={() => onDateClick?.(day)}
             >
               <div className={cn(
                 'text-lg font-medium mb-3',
                 isCurrentMonth ? 'text-gray-900' : 'text-gray-400',
-                isToday && 'text-blue-600'
+                isToday && 'text-pink-600'
               )}>
                 {format(day, 'd')}
               </div>
@@ -211,7 +211,7 @@ export function Calendar({ todos, cachedTodos = [], onDateClick, onTodoClick, on
               {/* 任务数量指示器 */}
               {dayTodos.length > 0 && (
                 <div className="flex justify-end mt-1">
-                  <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
+                  <div className="w-2 h-2 bg-pink-500 rounded-full"></div>
                 </div>
               )}
             </div>

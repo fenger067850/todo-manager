@@ -346,7 +346,7 @@ export default function Dashboard() {
             <select
               value={filterQuadrant}
               onChange={(e) => setFilterQuadrant(e.target.value)}
-              className="px-3 py-2 border border-gray-300 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="px-3 py-2 border border-gray-300 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-pink-500"
             >
               <option value="">所有象限</option>
               <option value="URGENT_IMPORTANT">紧急且重要</option>
@@ -438,14 +438,14 @@ export default function Dashboard() {
                                   type="checkbox"
                                   checked={todo.isCompleted}
                                   onChange={() => handleToggleComplete(todo)}
-                                  className="h-5 w-5 text-blue-600 focus:ring-blue-500 border-gray-300 rounded cursor-pointer"
+                                  className="h-5 w-5 text-pink-600 focus:ring-pink-500 border-gray-300 rounded cursor-pointer"
                                 />
 
                                 <Button
                                   variant="ghost"
                                   size="sm"
                                   onClick={() => handleEditTodo(todo)}
-                                  className="h-8 w-8 p-0 text-gray-500 hover:text-blue-600 hover:bg-blue-50"
+                                  className="h-8 w-8 p-0 text-gray-500 hover:text-pink-600 hover:bg-pink-50"
                                 >
                                   <Edit className="w-4 h-4" />
                                 </Button>
@@ -524,7 +524,7 @@ export default function Dashboard() {
                       name="description"
                       rows={3}
                       defaultValue={editingTodo.description || ''}
-                      className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+                      className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-pink-500 focus:border-pink-500"
                       placeholder="请输入任务描述（可选）"
                     />
                   </div>
@@ -537,7 +537,7 @@ export default function Dashboard() {
                       <select
                         name="priority"
                         defaultValue={editingTodo.priority}
-                        className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+                        className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-pink-500 focus:border-pink-500"
                       >
                         <option value="LOW">低</option>
                         <option value="MEDIUM">中</option>
@@ -552,7 +552,7 @@ export default function Dashboard() {
                       <select
                         name="quadrant"
                         defaultValue={editingTodo.quadrant || ''}
-                        className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+                        className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-pink-500 focus:border-pink-500"
                       >
                         <option value="">选择象限</option>
                         <option value="URGENT_IMPORTANT">紧急且重要</option>
@@ -571,7 +571,7 @@ export default function Dashboard() {
                       <select
                         name="categoryId"
                         defaultValue={editingTodo.categoryId || ''}
-                        className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+                        className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-pink-500 focus:border-pink-500"
                       >
                         <option value="">选择分类</option>
                         {categories.map((category) => (
@@ -693,7 +693,7 @@ export default function Dashboard() {
                     <textarea
                       name="description"
                       rows={3}
-                      className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+                      className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-pink-500 focus:border-pink-500"
                       placeholder="请输入任务描述（可选）"
                     />
                   </div>
@@ -703,7 +703,7 @@ export default function Dashboard() {
                       <label className="block text-sm font-medium text-gray-700 mb-1">
                         优先级
                       </label>
-                      <select name="priority" className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+                      <select name="priority" className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-pink-500 focus:border-pink-500">
                         <option value="LOW">低</option>
                         <option value="MEDIUM">中</option>
                         <option value="HIGH">高</option>
@@ -714,7 +714,7 @@ export default function Dashboard() {
                       <label className="block text-sm font-medium text-gray-700 mb-1">
                         四象限
                       </label>
-                      <select name="quadrant" className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+                      <select name="quadrant" className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-pink-500 focus:border-pink-500">
                         <option value="">选择象限</option>
                         <option value="URGENT_IMPORTANT">紧急且重要</option>
                         <option value="NOT_URGENT_IMPORTANT">不紧急但重要</option>
@@ -729,7 +729,7 @@ export default function Dashboard() {
                       <label className="block text-sm font-medium text-gray-700 mb-1">
                         分类
                       </label>
-                      <select name="categoryId" className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+                      <select name="categoryId" className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-pink-500 focus:border-pink-500">
                         <option value="">选择分类</option>
                         {categories.map((category) => (
                           <option key={category.id} value={category.id}>

@@ -52,7 +52,7 @@ export default function RegisterPage() {
             </h2>
             <p className="mt-2 text-sm text-gray-600">
               已有账户？{' '}
-              <Link href="/auth/login" className="font-medium text-blue-600 hover:text-blue-500">
+              <Link href="/auth/login" className="font-medium text-pink-600 hover:text-pink-500">
                 立即登录
               </Link>
             </p>
@@ -74,7 +74,7 @@ export default function RegisterPage() {
                   id="name"
                   name="name"
                   type="text"
-                  className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+                  className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-pink-500 focus:border-pink-500"
                   placeholder="请输入您的姓名"
                   value={formData.name}
                   onChange={handleChange}
@@ -90,7 +90,7 @@ export default function RegisterPage() {
                   name="username"
                   type="text"
                   required
-                  className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+                  className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-pink-500 focus:border-pink-500"
                   placeholder="请输入用户名"
                   value={formData.username}
                   onChange={handleChange}
@@ -107,7 +107,7 @@ export default function RegisterPage() {
                   type="email"
                   autoComplete="email"
                   required
-                  className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+                  className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-pink-500 focus:border-pink-500"
                   placeholder="请输入邮箱地址"
                   value={formData.email}
                   onChange={handleChange}
@@ -123,7 +123,7 @@ export default function RegisterPage() {
                   name="password"
                   type="password"
                   required
-                  className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+                  className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-pink-500 focus:border-pink-500"
                   placeholder="请输入密码（至少6位）"
                   value={formData.password}
                   onChange={handleChange}
@@ -135,7 +135,7 @@ export default function RegisterPage() {
               <button
                 type="submit"
                 disabled={isLoading}
-                className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 disabled:opacity-50 disabled:cursor-not-allowed"
+                className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-pink-600 hover:bg-pink-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pink-500 disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 {isLoading ? '注册中...' : '注册'}
               </button>

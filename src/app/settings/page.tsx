@@ -328,7 +328,7 @@ export default function Settings() {
                               setEditingCategory(category)
                               setShowEditCategoryForm(true)
                             }}
-                            className="h-8 w-8 p-0 text-gray-500 hover:text-blue-600 hover:bg-blue-50"
+                            className="h-8 w-8 p-0 text-gray-500 hover:text-pink-600 hover:bg-pink-50"
                           >
                             <Edit className="w-4 h-4" />
                           </Button>
@@ -371,9 +371,9 @@ export default function Settings() {
               </CardDescription>
             </CardHeader>
             <CardContent className="space-y-4">
-              <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
-                <h4 className="font-medium text-blue-900 mb-2">提醒功能说明</h4>
-                <ul className="text-sm text-blue-800 space-y-1">
+              <div className="bg-pink-50 border border-pink-200 rounded-lg p-4">
+                <h4 className="font-medium text-pink-900 mb-2">提醒功能说明</h4>
+                <ul className="text-sm text-pink-800 space-y-1">
                   <li>• 系统会自动为带截止时间的任务创建提醒</li>
                   <li>• 提醒时间包括：截止前1小时、1天、3天</li>
                   <li>• 您可以手动处理待发送的提醒</li>
@@ -418,9 +418,9 @@ export default function Settings() {
               </CardDescription>
             </CardHeader>
             <CardContent>
-              <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
-                <h4 className="font-medium text-blue-900 mb-2">待办事项管理系统</h4>
-                <p className="text-sm text-blue-800">
+              <div className="bg-pink-50 border border-pink-200 rounded-lg p-4">
+                <h4 className="font-medium text-pink-900 mb-2">待办事项管理系统</h4>
+                <p className="text-sm text-pink-800">
                   一个高效的任务管理工具，支持四象限分类、优先级管理、分类标签和提醒功能。
                   帮助您更好地组织和跟踪日常任务。
                 </p>
@@ -437,7 +437,7 @@ export default function Settings() {
                 </div>
                 <div className="flex justify-between items-center py-2">
                   <span className="text-sm font-medium text-gray-700">开发者</span>
-                  <span className="text-sm text-gray-600">宇哥</span>
+                  <span className="text-sm text-gray-600">凤歌</span>
                 </div>
               </div>
             </CardContent>
@@ -480,7 +480,7 @@ export default function Settings() {
                     <textarea
                       name="description"
                       rows={3}
-                      className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+                      className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-pink-500 focus:border-pink-500"
                       placeholder="请输入分类描述（可选）"
                     />
                   </div>
@@ -556,7 +556,7 @@ export default function Settings() {
                       name="description"
                       rows={3}
                       defaultValue={editingCategory.description || ''}
-                      className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+                      className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-pink-500 focus:border-pink-500"
                       placeholder="请输入分类描述（可选）"
                     />
                   </div>

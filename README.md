@@ -60,7 +60,7 @@
 
 1. **克隆项目**
 ```bash
-git clone https://github.com/YOUR_USERNAME/todo-manager.git
+git clone https://github.com/fenger067850/todo-manager.git
 cd todo-manager
 ```
 
@@ -220,8 +220,8 @@ todo-manager/
 
 **凤歌**
 
-- GitHub: [@YOUR_USERNAME](https://github.com/YOUR_USERNAME)
-- 项目链接: [https://github.com/YOUR_USERNAME/todo-manager](https://github.com/YOUR_USERNAME/todo-manager)
+- GitHub: [@fenger067850](https://github.com/fenger067850)
+- 项目链接: [https://github.com/fenger067850/todo-manager](https://github.com/fenger067850/todo-manager)
 
 ## 🙏 致谢
 

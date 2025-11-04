@@ -7,6 +7,27 @@
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-3-pink?style=flat-square)
 ![Prisma](https://img.shields.io/badge/Prisma-5-pink?style=flat-square)
 
+## 🚀 两种使用方式
+
+### 💻 本地应用（推荐）
+
+**完全离线运行，数据存储在本地，保护隐私！**
+
+#### 快速启动
+- **Windows**: 双击 `start.bat`
+- **macOS**: 双击 `凤歌待办管理.command`
+- **Linux**: 运行 `./start.sh`
+
+详细说明请查看 [LOCAL_APP_GUIDE.md](./LOCAL_APP_GUIDE.md) 或 [快速开始.txt](./快速开始.txt)
+
+### ☁️ 在线部署
+
+部署到 Vercel 等云平台，随时随地访问。
+
+详细部署指南：[DEPLOYMENT.md](./DEPLOYMENT.md) | [VERCEL_DEPLOY_GUIDE.md](./VERCEL_DEPLOY_GUIDE.md)
+
+---
+
 ## ✨ 项目特色
 
 ### 📋 智能任务管理

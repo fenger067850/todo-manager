@@ -61,9 +61,11 @@ ENVEOF
     echo -e "${GREEN}✓ 配置文件已创建${NC}"
 fi
 
-# 加载环境变量
+# 加载环境变量（仅加载有效的变量）
 if [ -f ".env.local" ]; then
-    export $(cat .env.local | grep -v '^#' | xargs)
+    set -a
+    source .env.local
+    set +a
 fi
 
 # 检查数据库是否初始化

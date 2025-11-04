@@ -9,7 +9,17 @@
 
 ## 🚀 两种使用方式
 
-### 💻 本地应用（推荐）
+### ☁️ 在线部署（一键部署，老板直接访问）
+
+**让老板通过链接直接使用，无需安装任何软件！**
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/fenger067850/todo-manager)
+
+点击上方按钮或访问：[一键部署到Vercel.md](./一键部署到Vercel.md)
+
+部署完成后，您会得到类似 `https://todo-manager-xxx.vercel.app` 的链接，分享给老板即可！
+
+### 💻 本地应用（离线使用）
 
 **完全离线运行，数据存储在本地，保护隐私！**
 
@@ -19,12 +29,6 @@
 - **Linux**: 运行 `./start.sh`
 
 详细说明请查看 [LOCAL_APP_GUIDE.md](./LOCAL_APP_GUIDE.md) 或 [快速开始.txt](./快速开始.txt)
-
-### ☁️ 在线部署
-
-部署到 Vercel 等云平台，随时随地访问。
-
-详细部署指南：[DEPLOYMENT.md](./DEPLOYMENT.md) | [VERCEL_DEPLOY_GUIDE.md](./VERCEL_DEPLOY_GUIDE.md)
 
 ---
 

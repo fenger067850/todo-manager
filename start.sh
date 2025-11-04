@@ -61,11 +61,16 @@ ENVEOF
     echo -e "${GREEN}✓ 配置文件已创建${NC}"
 fi
 
+# 加载环境变量
+if [ -f ".env.local" ]; then
+    export $(cat .env.local | grep -v '^#' | xargs)
+fi
+
 # 检查数据库是否初始化
 if [ ! -f "prisma/local.db" ]; then
     echo -e "${PINK}🗄️  初始化数据库...${NC}"
     npx prisma generate
-    npx prisma db push
+    DATABASE_URL="file:./local.db" npx prisma db push
     if [ $? -ne 0 ]; then
         echo -e "${YELLOW}❌ 数据库初始化失败${NC}"
         exit 1

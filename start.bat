@@ -62,11 +62,12 @@ if not exist ".env.local" (
     echo ✓ 配置文件已创建
 )
 
-:: 检查数据库是否初始化
+::  检查数据库是否初始化
 if not exist "prisma\local.db" (
     echo.
     echo 🗄️  初始化数据库...
     call npx prisma generate
+    set DATABASE_URL=file:./local.db
     call npx prisma db push
     if %errorlevel% neq 0 (
         echo ❌ 数据库初始化失败
